@@ -1,6 +1,3 @@
-# ochrona_danych
-
-
 ## Zad.1
 
 1. Napisz program korzystający z szyfru Cezara, który jest w stanie zaszyfrować i odszyfrować dowolny ciąg znaków z dowolnym kluczem.
