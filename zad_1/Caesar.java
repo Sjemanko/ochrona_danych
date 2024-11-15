@@ -21,6 +21,10 @@ public class Caesar {
                 isUpper = true;
                 text_arr[i] += (char) offset;
             }
+            if(!((int)text_arr[i] <= (int)'z' && (int)text_arr[i] >= 'a') || ((int)text_arr[i] >= (int)'A') && ((int)text_arr[i] <= (int)'Z')) {
+                changedText.append(text_arr[i]);
+                continue;
+            }
             int char_index = new String(alphabet).indexOf((text_arr[i]));
             if(mode == 1) {
                 asciiShiftedLetter = char_index + (int) 'a' - key;

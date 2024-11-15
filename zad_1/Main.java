@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
 
         // zad_1
-        Caesar caesar = new Caesar(16);
+        Caesar caesar = new Caesar(7);
         Vigenere vigenere = new Vigenere("key");
         CaesarCracker cracker = new CaesarCracker();
 
-        String text = "TomAsZBulEckI";
+        String text = "The transformation can be represented by aligning two alphabets; the cipher alphabet is the plain alphabet rotated left or right by some number of positions. For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right shift of";
 
         String encodedCaesar = caesar.cipher (text, 0);
         System.out.println(encodedCaesar);
@@ -26,8 +26,8 @@ public class Main {
         System.out.println(decodedVigenere);
 
         System.out.println();
-
-        String textToDecodeByCracker = "sucbmdflho";
+//        // zad_3
+        String textToDecodeByCracker = "qlkuh g uhqwyvzazgfjo aljoupr zgfmyvdhuph. Qlza av yvkghq zgfmyb wvkzahdplupvdlnv, d raóyft rhżkh spalyh alrzab qhdulnv (uplghzgfmyvdhulnv) ghzaęwvdhuh qlza puuą";
         cracker.crack(textToDecodeByCracker);
     }
 }
