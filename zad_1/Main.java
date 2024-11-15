@@ -6,6 +6,7 @@ public class Main {
         // zad_1
         Caesar caesar = new Caesar(16);
         Vigenere vigenere = new Vigenere("key");
+        CaesarCracker cracker = new CaesarCracker();
 
         String text = "TomAsZBulEckI";
 
@@ -24,5 +25,9 @@ public class Main {
         String decodedVigenere = vigenere.cipher(encodedVigenere, 1);
         System.out.println(decodedVigenere);
 
+        System.out.println();
+
+        String textToDecodeByCracker = "sucbmdflho";
+        cracker.crack(textToDecodeByCracker);
     }
 }
